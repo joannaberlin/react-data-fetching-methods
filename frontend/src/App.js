@@ -6,11 +6,13 @@ import EventsRootLayout from './pages/EventsRootLayout';
 import Home from './pages/Home';
 import NewEvent from './pages/NewEvent';
 import RootLayout from './pages/RootLayout';
+import Error from './pages/Error';
 
 const router = createBrowserRouter([
 	{
 		path: '/',
 		element: <RootLayout />,
+		errorElement: <Error />,
 		children: [
 			{ index: true, element: <Home /> },
 			{
